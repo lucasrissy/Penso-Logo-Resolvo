@@ -6,7 +6,14 @@ let pessoa ={
 
 
 
-let value= document.querySelector('#name')
-pessoa.name = value.value
+function enviar(){
+    let name = document.getElementById('name').value
+    let age = document.getElementById('age').value
+    let date = document.getElementById('date').value 
 
-console.log(pessoa.name)
+    pessoa.name = name
+    pessoa.age = age
+    pessoa.date = date
+     
+}
+
